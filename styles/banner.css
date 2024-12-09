@@ -36,31 +36,3 @@
     background: url(../img/Lupa.svg) no-repeat;
     background-position: 1em;
 }
-
-.banner__topics {
-    background: var(--azul-degrade);
-    color: var(--branco);
-    text-align: center;
-    padding: 2.5em 2em;
-}
-
-.banner__topics-titulo {
-    text-transform: uppercase;
-    font-size: 1em;
-    margin-bottom: 24px;
-}
-
-.banner__topics-lista {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-
-.banner__topics-tags {
-    background: var(--laranja);
-    padding: 1.5em 1em;
-    margin: 1em 0 0 1em;
-    font-weight: bold;
-}

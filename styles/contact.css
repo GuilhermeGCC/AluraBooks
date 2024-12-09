@@ -1,0 +1,39 @@
+.contact {
+    background-color: var(--branco);
+    color: var(--azul);
+    border: 1px solid var(--cinza) ;
+
+}
+
+.contact__container {
+    padding: 1.5em 1.4375em 1.875em 1.5em;
+}
+
+.contact__titulo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact__texto {
+    margin: 0.5em 0 1.5em 0;
+}
+
+.contact__pesquisa {    
+    background-color: transparent;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+
+.contact__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--azul);
+    background: url(../img/Email.svg) no-repeat;
+    background-position: 0.5em;
+   
+}
