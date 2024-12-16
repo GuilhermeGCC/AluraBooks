@@ -61,16 +61,14 @@
 }
 
 /*NÃO TEM NO MOBILE */
-.container__titulo {
+.container__titulo, .opções, .container__texto {
     display:none;
-}
-
-.opções {
-    display: none;
 }
 
 /* TABLET */
 @media screen and (min-width:1024px) {
+    
+    
     .container__titulo, .container__titulo--negrito {
         font-family: var(--fonte-secundaria);
         font-size: 30px;
@@ -107,15 +105,32 @@
         display: block;
         width: auto;
     }
-
-
+    
     /* NÃO TEM NO TABLET */
-    .cabeçalho__menu-hamburguer {
+    .cabeçalho__menu-hamburguer, .container__imagem--transparente {
         display: none;
+    }
+}  
+
+/* DESKTOP */
+@media screen and (min-width:1718px) {
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
     }
     
-    .container__imagem--transparente {
-        display: none;
+    .cabeçalho {
+        padding: 0 2em;
     }
 
+    .opções {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
+    }
 }
