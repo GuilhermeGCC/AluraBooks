@@ -1,3 +1,4 @@
+/* MOBILE */
 .topics {
     background: var(--azul-degrade);
     color: var(--branco);
@@ -30,5 +31,22 @@
     font-size: 14px;
     padding: 1.5em 1em;
     background: var(--laranja);
+    
+}
+
+/* TABLET */
+@media screen and (min-width:1024px) {
+
+    .topics__title {
+        font-size: 24px;
+    }
+
+    .topics__item {
+        margin: 3em 0.5em;
+    }
+
+    .topics__link {
+        font-size: 24px;
+    }
     
 }
