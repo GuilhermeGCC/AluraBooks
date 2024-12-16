@@ -35,7 +35,6 @@
 }
 
 /* TABLET */
-
 @media screen and (min-width:1024px) {
     
     .contact {
@@ -56,5 +55,14 @@
 
     .contact__pesquisa {
         width: 30%;
+
+    }
+}
+
+/* DESKTOP  */
+@media screen and (min-width: 1728px) {
+
+    .contact {
+        padding: 3em 20vw; 
     }
 }
