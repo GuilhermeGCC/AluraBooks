@@ -113,6 +113,20 @@
     .cabeçalho__menu-hamburguer {
         display: none;
     }
+<<<<<<< Updated upstream
+=======
+}  
+
+/* DESKTOP */
+@media screen and (min-width:1728px) {
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+>>>>>>> Stashed changes
     
     .container__imagem--transparente {
         display: none;
