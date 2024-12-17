@@ -60,17 +60,23 @@
     display: none;
 }
 
-/*NÃO TEM NO MOBILE */
-.container__titulo {
-    display:none;
+.container__botao:checked~.container__rotulo > .cabeçalho__menu-hamburguer {
+    background-image: url("../img/Menu Aberto.png")
 }
 
-.opções {
-    display: none;
+.container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade);
+}
+
+/*NÃO TEM NO MOBILE */
+.container__titulo, .opções, .container__texto {
+    display:none;
 }
 
 /* TABLET */
 @media screen and (min-width:1024px) {
+    
+    
     .container__titulo, .container__titulo--negrito {
         font-family: var(--fonte-secundaria);
         font-size: 30px;
@@ -90,8 +96,9 @@
     }
 
     .opções__item {
-        padding: 0 1em;
+        padding: 2em 1em;
         text-transform: uppercase;
+        padding: 
     }
 
     .opções__link {
@@ -108,28 +115,48 @@
         width: auto;
     }
 
+    .opções__botão:checked~.opções__rotulo>.opções__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
 
     /* NÃO TEM NO TABLET */
-    .cabeçalho__menu-hamburguer {
+    .cabeçalho__menu-hamburguer, .container__imagem--transparente {
         display: none;
     }
-<<<<<<< Updated upstream
-=======
-}  
+}
+ 
 
 /* DESKTOP */
 @media screen and (min-width:1728px) {
 
-    .container__link {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: var(--preto);
-    }
->>>>>>> Stashed changes
-    
-    .container__imagem--transparente {
-        display: none;
+
+   .container__link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--preto);
     }
 
+    
+    .cabeçalho {
+        padding: 0 2em;
+    }
+
+    .opções {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
+    }
 }
