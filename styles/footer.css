@@ -9,6 +9,8 @@
     display: none;
 }
 
+
+
 /* TABLET */
 
 @media screen and (min-width: 1024px) {
@@ -38,4 +40,19 @@
         color: var(--cinza-escuro);
         margin-left: 0.6em;
     }
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 1728px) {
+
+    .footer {
+        padding: 3em 0 0 0;
+    }
+    
+    .lista-rodapé {
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
+    }
+
 }
